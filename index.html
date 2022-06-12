@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <audio class="musica-tema" autoplay>
+      <source src="destino.mp3" type="audio/ogg" />
+      <source src="destino.mp3" type="audio/mpeg" />
+    </audio>
+
+    <div id="container">
+      <img
+        src="https://gist.githubusercontent.com/maykbrito/0acdf4ce919838ffed50915a31fc5b23/raw/6f4dd01ec3116428ec4c99255944cb9ac7927590/cristal-ball.svg"
+        alt="Imagem de uma bola de cristal"
+      />
+      <h1>Vou relevar seu destino!</h1>
+      <p>Clique em fazer pergunta para que seu destino seja revelado.</p>
+      <input
+        class="input-pergunta"
+        type="text"
+        placeholder="Digite sua pergunta"
+      />
+      <button>Fazer Pergunta</button>
+
+      <h3 class="resposta"></h3>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

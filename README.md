@@ -7,7 +7,7 @@
 </p>
 
 <p>
-  O objetivo do projeto foi criar um programa para ler o destino do usuário, onde a cada pergunta que o mesmo faz, o programa retorna uma nova mensagem. Utilizei as tecnologias HTML, CSS e JavaScript.
+  O objetivo do projeto foi criar um programa para ler o destino do usuário, onde a cada pergunta que o mesmo faz, o programa retorna uma nova mensagem.
 </p>
 
 <br>

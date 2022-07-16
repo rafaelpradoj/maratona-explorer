@@ -4,26 +4,33 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
     <title>Eu leio seu destino!</title>
   </head>
   <body>
-    <div id="container">
+    <main class="container">
+      <audio autoplay>
+        <source src="assets/audio/destino.mp3" type="audio/ogg" />
+        <source src="assets/audio/destino.mp3" type="audio/mpeg" />
+      </audio>
       <img
         src="https://gist.githubusercontent.com/maykbrito/0acdf4ce919838ffed50915a31fc5b23/raw/6f4dd01ec3116428ec4c99255944cb9ac7927590/cristal-ball.svg"
         alt="Imagem de uma bola de cristal"
       />
       <h1>Vou relevar seu destino!</h1>
       <p>Clique em fazer pergunta para que seu destino seja revelado.</p>
-      <input
-        class="input-pergunta"
-        type="text"
-        placeholder="Digite sua pergunta"
-      />
-      <button>Fazer Pergunta</button>
-
-      <h3 class="resposta"></h3>
-    </div>
-    <script src="app.js"></script>
+      <form>
+        <input
+          class="input-question"
+          type="text"
+          name="inputQuestion"
+          placeholder="Digite sua pergunta"
+          autofocus
+        />
+        <button>Fazer Pergunta</button>
+      </form>
+      <h3 class="answer"></h3>
+    </main>
+    <script src="assets/js/app.js"></script>
   </body>
 </html>

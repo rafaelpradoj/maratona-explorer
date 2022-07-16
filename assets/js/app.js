@@ -1,6 +1,6 @@
-const inputQuestion = document.querySelector('.input-pergunta')
+const form = document.querySelector('form')
 const button = document.querySelector('button')
-const h3 = document.querySelector('.resposta')
+const h3 = document.querySelector('.answer')
 
 const answers = [
   "Certeza!",
@@ -24,14 +24,15 @@ const answers = [
   "Sinais apontam que sim.",
 ]
 
-
-button.addEventListener('click', () => {
+form.addEventListener('submit', event => {
+  event.preventDefault()
+  const inputQuestion = event.target.inputQuestion
   const totalAnswers = answers.length
   const randomAnswer = answers[Math.round(Math.random() * totalAnswers)]
   const question = `<div>${inputQuestion.value}</div>`
 
   if (inputQuestion.value === '') {
-    alert('Digite sua pergunta')
+    alert('Digite sua pergunta!')
     return
   }
 
@@ -45,5 +46,4 @@ button.addEventListener('click', () => {
     h3.style.opacity = 0
     button.removeAttribute('disabled')
   }, 3000)
-  
 })
